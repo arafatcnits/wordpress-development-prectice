@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Bricks Land</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/Fav-icon.webp" />
+  <!-- Fav Icon -->
+
+  <!-- CSS Link Start -->
+  <link rel="stylesheet" href="./assets/css/navbar-footer.css" />
+  <link rel="stylesheet" href="./assets/css/app.css" />
+  <link rel="stylesheet" href="./assets/css/products.css" />
+  <link rel="stylesheet" href="./assets/css/preloader.css">
+  <!-- CSS Link End -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+</head>
+
+<body>
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="brick"></div>
+      <div class="loading">Loading..</div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Back to Top Button -->
+  <a id="back_to_top"><i class="fa-solid fa-arrow-up"></i></a>
+  <!-- Back to Top Button -->
+
+  <!-- Top bar Start -->
+  <div id="topbar">
+    <div class="container">
+      <div class="topbar_wrapper">
+        <div class="contact">
+          <a href="tel:+8801755001122" class="call">
+            <i class="fa-solid fa-phone"></i>
+            <p>(+864) 292-6100</p>
+          </a>
+          <span>|</span>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>2005 Old Spartanburg Rd, South Carolina, USA</p>
+          </div>
+        </div>
+        <div class="social_wrapper">
+          <div class="time">
+            <i class="fa-solid fa-clock"></i>
+            <p>Mon - Sat: 8:00am to 5:30pm</p>
+          </div>
+          <span>|</span>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top bar end -->
+
+  <!-- Navbar Start -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="wrapper">
+        <a href="./index.html" class="logo"><img src="./assets/img/navbar-logo.svg" alt="" /></a>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link"><span>Home</span></a>
+            </li>
+            <li class="menu-item">
+              <a href="./products.html" class="menu-link active"><span>Products</span></a>
+            </li>
+            <li class="menu-item">
+              <a href="./about.html" class="menu-link"><span>About Us</span></a>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="discover_link" data-toggle="submenu">Pages<i
+                  class="fa-solid fa-angle-down dropdown_icon"></i></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="./product-single.html" class="submenu-link"><span>Product Single</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="./blog-single.html" class="submenu-link"><span>Blog Single</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link"><span>Privacy Policy</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link"><span>Terms & Conditions</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="./brick-dimensions-guide.html" class="submenu-link"><span>Brick Dimensions
+                      Guide</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="./brick-test-result.html" class="submenu-link"><span>Brick Test
+                      Result</span></a>
+                </li>
+                <li class="submenu-item">
+                  <a href="./career.html" class="submenu-link"><span>Careers</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="./blog.html" class="menu-link"><span>Blog</span></a>
+            </li>
+            <li class="menu-item">
+              <a href="./gallery.html" class="menu-link"><span>Gallery</span></a>
+            </li>
+          </ul>
+          <div class="contact_us_btn_1">
+            <a href="./contact.html" class="contact_btn_2"><span>Contact Us</span></a>
+          </div>
+          <div class="close-icon" id="close-icon">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+          </div>
+        </nav>
+        <div class="contact_us_btn">
+          <a href="./contact.html" class="contact_btn_1"><span>Contact Us</span></a>
+        </div>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Hero Start -->
+  <section id="hero" style="
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(./assets/img/products/hero-bg.webp) lightgray 50% / cover no-repeat;
+      ">
+    <div id="breadcrumbs">
+      <h1>Our Products</h1>
+      <div class="breadcrumbs_link">
+        <a href="./index.html">Home /</a>
+        <span class="breadcrumb_last">Product</span>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Key Feature Start -->
+  <div class="feature">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box icon1">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="#BF390B" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_166_593)">
+                <path
+                  d="M34.4837 26.5234L30.3763 30.6309L29.4529 29.7075C28.2111 28.4657 26.2051 28.4657 24.9633 29.7075C23.7215 30.9493 23.7215 32.9553 24.9633 34.197L28.1474 37.3811C28.7842 38.0179 29.5802 38.3045 30.4081 38.3045C31.236 38.3045 32.032 37.9861 32.6688 37.3811L39.037 31.013C40.2788 29.7712 40.2788 27.7652 39.037 26.5234C37.7952 25.2816 35.7255 25.2816 34.4837 26.5234Z"
+                  fill="#BF390B" />
+                <path
+                  d="M42.9532 25.6637C43.5582 26.6826 44.6089 27.2557 45.7234 27.2557C46.2647 27.2557 46.806 27.1284 47.3154 26.8418C48.8438 25.9503 49.3532 24.008 48.4935 22.4796C47.8567 21.3652 47.0925 20.2826 46.201 19.3274C45.0229 18.0219 43.0169 17.8945 41.7114 19.0727C40.406 20.2508 40.2786 22.2567 41.4567 23.5622C41.998 24.199 42.5074 24.8995 42.9532 25.6637Z"
+                  fill="#BF390B" />
+                <path
+                  d="M48.1114 30.2488C46.3602 30.1214 44.8 31.3951 44.6408 33.1463C44.0358 39.7373 38.591 44.7045 31.9681 44.7045C24.9632 44.7045 19.2318 39.005 19.2318 31.9682C19.2318 24.9314 24.9313 19.2319 31.9681 19.2319C32.8278 19.2319 33.6875 19.3274 34.5154 19.4866C36.2666 19.8368 37.9224 18.7224 38.2726 17.003C38.6229 15.2836 37.5084 13.596 35.789 13.2458C34.5472 12.9911 33.2418 12.8637 31.9681 12.8637C21.4288 12.8637 12.8636 21.4289 12.8636 31.9682C12.8636 42.5075 21.4288 51.0727 31.9681 51.0727C41.9025 51.0727 50.0855 43.6219 50.9771 33.7194C51.1363 31.9682 49.8627 30.408 48.1114 30.2488Z"
+                  fill="#BF390B" />
+                <path
+                  d="M59.6697 15.9841C58.3323 13.6597 54.7343 12.991 52.8557 11.1124C50.9771 9.23383 50.3085 5.63582 47.9841 4.29851C47.0607 3.75721 45.9144 3.62985 44.7363 3.62985C43.7811 3.62985 42.794 3.69353 41.8388 3.69353C41.0746 3.69353 40.3105 3.62985 39.61 3.47065C37.0627 2.80199 34.7065 0 31.9682 0C29.2299 0 26.8736 2.77015 24.3264 3.47065C23.6259 3.66169 22.8617 3.69353 22.0975 3.69353C21.1423 3.69353 20.1552 3.62985 19.2 3.62985C18.0219 3.62985 16.9075 3.75721 15.9522 4.29851C13.6597 5.63582 12.991 9.20199 11.1124 11.1124C9.20199 12.991 5.63582 13.6597 4.26667 15.9841C2.96119 18.2766 4.17114 21.7154 3.47065 24.3264C2.80199 26.8736 0 29.2299 0 31.9682C0 34.7065 2.77015 37.0627 3.47065 39.61C4.17114 42.2209 2.96119 45.6597 4.29851 47.9522C5.63582 50.2766 9.23383 50.9453 11.1124 52.8239C12.991 54.7025 13.6597 58.3005 15.9841 59.6378C16.9075 60.1791 18.0537 60.3065 19.2318 60.3065C20.1871 60.3065 21.1741 60.2428 22.1294 60.2428C22.8935 60.2428 23.6577 60.3065 24.3582 60.4657C26.9055 61.1343 29.2617 63.9363 32 63.9363C34.7383 63.9363 37.0945 61.1662 39.6418 60.4657C40.3423 60.2746 41.1065 60.2428 41.8706 60.2428C42.8259 60.2428 43.8129 60.3065 44.7682 60.3065C45.9463 60.3065 47.0607 60.1791 48.0159 59.6378C50.3403 58.3005 51.009 54.7025 52.8876 52.8239C54.7662 50.9453 58.3642 50.2766 59.7015 47.9522C61.0388 45.6597 59.8289 42.2209 60.5294 39.61C61.198 37.0627 64 34.7065 64 31.9682C64 29.2299 61.2299 26.8736 60.5294 24.3264C59.7652 21.7154 60.9751 18.2766 59.6697 15.9841ZM56.7085 33.0189C55.8806 34.3244 54.8617 35.9483 54.3204 37.9542C53.7791 40.0239 53.8428 41.9662 53.9065 43.5264C53.9065 43.8448 53.9383 44.2906 53.9383 44.6408C53.6199 44.8318 53.2378 45.0229 52.9194 45.1821C51.5503 45.9144 49.8308 46.806 48.3025 48.3025C46.806 49.799 45.9144 51.5184 45.1821 52.9194C45.0229 53.2378 44.8318 53.6199 44.6408 53.9383C44.2587 53.9383 43.8766 53.9065 43.5264 53.9065C42.9532 53.8746 42.3801 53.8746 41.807 53.8746C40.3105 53.8746 39.1005 54.0338 37.9542 54.3204C35.9483 54.8617 34.3244 55.8806 33.0189 56.7085C32.7005 56.8995 32.2866 57.1542 31.9682 57.3771C31.6179 57.1861 31.2358 56.9314 30.9174 56.7085C29.6119 55.8806 27.9881 54.8617 25.9821 54.3204C24.8358 54.002 23.594 53.8746 22.0975 53.8746C21.5244 53.8746 20.9512 53.9065 20.3781 53.9065C19.996 53.9065 19.6139 53.9383 19.2637 53.9383C19.0726 53.6199 18.8816 53.2378 18.7224 52.9194C17.9901 51.5503 17.0985 49.8309 15.602 48.3025C14.1055 46.806 12.3861 45.9144 10.9851 45.1821C10.6667 45.0229 10.2846 44.8318 9.96617 44.6408C9.96617 44.2906 9.99801 43.8448 9.99801 43.5264C10.0617 41.9662 10.1254 40.0239 9.58408 37.9542C9.04279 35.9483 8.02388 34.3244 7.19602 33.0189C7.00497 32.7005 6.75025 32.2866 6.52736 31.9682C6.71841 31.6179 6.97313 31.2358 7.19602 30.9174C8.02388 29.6119 9.04279 27.9881 9.58408 25.9821C10.1254 23.9124 10.0617 21.9702 9.99801 20.41C9.99801 20.0915 9.96617 19.6458 9.96617 19.2955C10.2846 19.1045 10.6667 18.9134 10.9851 18.7542C12.3542 18.0219 14.0736 17.1304 15.602 15.6338C17.0985 14.1373 17.9901 12.4179 18.7224 11.0169C18.8816 10.6985 19.0726 10.3164 19.2637 9.99801C19.6458 9.99801 20.0279 10.0299 20.3781 10.0299C20.9831 10.0299 21.5562 10.0617 22.0975 10.0617C23.594 10.0617 24.804 9.90249 25.9503 9.61592C27.9562 9.07463 29.5801 8.05572 30.8856 7.22786C31.204 7.03682 31.6179 6.78209 31.9363 6.55921C32.2866 6.75025 32.6687 7.00498 32.9871 7.22786C34.2925 8.05572 35.9164 9.07463 37.9224 9.61592C39.0687 9.93433 40.3105 10.0617 41.807 10.0617C42.3801 10.0617 42.9532 10.0299 43.5264 10.0299C43.9085 10.0299 44.2906 9.99801 44.6408 9.99801C44.8318 10.3164 45.0229 10.6985 45.1821 11.0169C45.9144 12.3861 46.806 14.1055 48.3025 15.6338C49.799 17.1304 51.5184 18.0219 52.9194 18.7542C53.2378 18.9134 53.6199 19.1045 53.9383 19.2955C53.9383 19.6458 53.9065 20.0915 53.9065 20.41C53.8428 21.9702 53.7791 23.9124 54.3204 25.9821C54.8617 27.9881 55.8806 29.6119 56.7085 30.9174C56.8995 31.2358 57.1542 31.6498 57.3771 31.9682C57.1861 32.3184 56.9314 32.7005 56.7085 33.0189Z"
+                  fill="#BF390B" />
+              </g>
+              <defs>
+                <clipPath id="clip0_166_593">
+                  <rect width="64" height="64" fill="#BF390B" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p class="icon-text">Best Quality Material.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4738 34.854V10.5946C21.4738 9.45917 21.9248 8.37027 22.7277 7.56741C23.5305 6.76455 24.6194 6.31351 25.7548 6.31351C26.8902 6.31351 27.9792 6.76455 28.782 7.56741C29.5849 8.37027 30.0359 9.45917 30.0359 10.5946V32"
+                stroke="#BF390B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M30.036 30.573V24.8649C30.036 23.7294 30.4871 22.6405 31.2899 21.8377C32.0928 21.0348 33.1817 20.5838 34.3171 20.5838C35.4525 20.5838 36.5414 21.0348 37.3443 21.8377C38.1471 22.6405 38.5982 23.7294 38.5982 24.8649V32"
+                stroke="#BF390B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M38.5981 27.7189C38.5981 26.5835 39.0492 25.4946 39.852 24.6917C40.6549 23.8889 41.7438 23.4378 42.8792 23.4378C44.0146 23.4378 45.1035 23.8889 45.9064 24.6917C46.7093 25.4946 47.1603 26.5835 47.1603 27.7189V32"
+                stroke="#BF390B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M47.1603 30.573C47.1603 29.4376 47.6114 28.3487 48.4142 27.5458C49.2171 26.7429 50.306 26.2919 51.4414 26.2919C52.5768 26.2919 53.6657 26.7429 54.4686 27.5458C55.2715 28.3487 55.7225 29.4376 55.7225 30.573V43.4162C55.7225 47.9579 53.9183 52.3135 50.7069 55.5249C47.4955 58.7364 43.1398 60.5405 38.5982 60.5405H32.8901H33.4837C30.6477 60.541 27.856 59.8372 25.3593 58.4922C22.8626 57.1471 20.739 55.2031 19.1792 52.8346L18.6198 51.9784C17.7293 50.6113 14.6041 45.1629 9.24138 35.6304C8.69469 34.6586 8.54865 33.512 8.83434 32.4343C9.12003 31.3565 9.8149 30.4328 10.7712 29.8595C11.7897 29.2483 12.9832 28.995 14.1622 29.1398C15.3412 29.2846 16.438 29.8192 17.2784 30.6586L21.4739 34.8541"
+                stroke="#BF390B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.9117 6.31351L10.0576 3.45946" stroke="#BF390B" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M10.0577 17.7297H7.20361" stroke="#BF390B" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M38.5981 6.31351L41.4522 3.45946" stroke="#BF390B" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M41.4523 14.8757H44.3063" stroke="#BF390B" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <p class="icon-text">Engineer's First Choice.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.3333 21.3333V19.3333H21.3333H18.6666C15.6608 19.3333 12.7781 18.1393 10.6527 16.0139C8.52731 13.8885 7.33327 11.0058 7.33327 7.99999C7.33327 7.82318 7.40351 7.65361 7.52853 7.52859C7.65355 7.40357 7.82312 7.33333 7.99993 7.33333H55.9999C56.1768 7.33333 56.3463 7.40357 56.4713 7.52859C56.5964 7.65361 56.6666 7.82319 56.6666 7.99999C56.6666 11.0058 55.4726 13.8885 53.3471 16.0139C51.2217 18.1393 48.3391 19.3333 45.3333 19.3333H42.6666H40.6666V21.3333V26.6667V28.6667H42.6666H50.6666H50.6868L50.7069 28.6663C50.8629 28.6631 51.015 28.7148 51.1368 28.8122C51.2579 28.9091 51.3414 29.0451 51.373 29.1968C51.3732 29.1977 51.3734 29.1987 51.3736 29.1996L56.6996 55.8295C56.7139 55.9226 56.7083 56.0177 56.6831 56.1087C56.6565 56.2044 56.6089 56.293 56.5438 56.368L56.5215 56.3936L56.5 56.42C56.438 56.4965 56.3598 56.5583 56.271 56.6009C56.1836 56.643 56.088 56.6654 55.991 56.6667H7.99993H7.9866L7.97327 56.6668C7.87255 56.6682 7.77284 56.6467 7.68163 56.604C7.59041 56.5612 7.51005 56.4984 7.4466 56.4202L7.4411 56.4134L7.43554 56.4067C7.37269 56.3305 7.32753 56.2414 7.30332 56.1457C7.27926 56.0506 7.27649 55.9514 7.29518 55.8551C7.2953 55.8545 7.29542 55.8539 7.29554 55.8533L12.6263 29.1996C12.6264 29.1988 12.6266 29.198 12.6268 29.1972C12.6583 29.0453 12.7419 28.9091 12.863 28.8122C12.9849 28.7148 13.137 28.6631 13.2929 28.6663L13.3131 28.6667H13.3333H21.3333H23.3333V26.6667V21.3333ZM26.6666 19.3333H24.6666V21.3333V26.6667V28.6667H26.6666H37.3333H39.3333V26.6667V21.3333V19.3333H37.3333H26.6666ZM26.4442 50.9814C28.0887 52.0802 30.0221 52.6667 31.9999 52.6667C34.6521 52.6667 37.1956 51.6131 39.071 49.7377C40.9464 47.8624 41.9999 45.3188 41.9999 42.6667C41.9999 40.6889 41.4134 38.7555 40.3146 37.111C39.2158 35.4665 37.654 34.1847 35.8268 33.4279C33.9995 32.671 31.9888 32.473 30.049 32.8588C28.1092 33.2447 26.3274 34.1971 24.9289 35.5956C23.5303 36.9941 22.5779 38.776 22.1921 40.7158C21.8062 42.6556 22.0043 44.6662 22.7611 46.4935C23.518 48.3208 24.7997 49.8825 26.4442 50.9814Z"
+                stroke="#BF390B" stroke-width="4" />
+            </svg>
+
+            <p class="icon-text">Ensures Optimal Weight.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box icon1">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_166_551)">
+                <path
+                  d="M32 64C31.7831 63.996 31.5678 63.9624 31.36 63.9C23.9705 61.4414 17.5433 56.7174 12.991 50.3987C8.43869 44.08 5.99259 36.4878 6.00002 28.7V12C6.00002 11.4696 6.21073 10.9609 6.5858 10.5858C6.96088 10.2107 7.46958 10 8.00002 10C12.1779 10.0149 16.317 9.19859 20.1764 7.59853C24.0357 5.99847 27.5383 3.64666 30.48 0.680007C30.8817 0.268142 31.4253 0.0249522 32 6.9954e-06C32.2671 -0.0121454 32.5339 0.0293818 32.7847 0.122133C33.0355 0.214884 33.2651 0.356976 33.46 0.540007C36.4026 3.53197 39.9107 5.90909 43.7802 7.53312C47.6497 9.15716 51.8035 9.9957 56 10C56.5304 10 57.0392 10.2107 57.4142 10.5858C57.7893 10.9609 58 11.4696 58 12V28.7C58.0285 36.5048 55.5922 44.1194 51.0383 50.4581C46.4845 56.7968 40.0458 61.536 32.64 64C32.4277 64.0288 32.2124 64.0288 32 64ZM10 14V28.76C10.0073 35.5834 12.1256 42.2374 16.0645 47.8091C20.0034 53.3808 25.5698 57.5973 32 59.88C38.4399 57.5939 44.0131 53.3683 47.9528 47.7846C51.8925 42.201 54.0052 35.5336 54 28.7V14C45.8191 13.5556 38.0448 10.2904 32 4.76001C25.9525 10.2862 18.1798 13.5507 10 14Z"
+                  fill="#BF390B" />
+                <path
+                  d="M28 20H36V26.36C36 26.795 35.8272 27.2121 35.5197 27.5197C35.2121 27.8272 34.795 28 34.36 28H29.64C29.205 28 28.7879 27.8272 28.4803 27.5197C28.1728 27.2121 28 26.795 28 26.36V20Z"
+                  fill="#BF390B" />
+                <path
+                  d="M40.58 46H23.42C21.9841 45.9947 20.6086 45.422 19.5933 44.4067C18.578 43.3914 18.0053 42.0159 18 40.58V23.42C18.0053 21.9841 18.578 20.6086 19.5933 19.5933C20.6086 18.578 21.9841 18.0053 23.42 18H40.58C42.0159 18.0053 43.3914 18.578 44.4067 19.5933C45.422 20.6086 45.9947 21.9841 46 23.42V40.58C45.9947 42.0159 45.422 43.3914 44.4067 44.4067C43.3914 45.422 42.0159 45.9947 40.58 46ZM23.42 22C23.0434 22 22.6822 22.1496 22.4159 22.4159C22.1496 22.6822 22 23.0434 22 23.42V40.58C22 40.9566 22.1496 41.3178 22.4159 41.5841C22.6822 41.8504 23.0434 42 23.42 42H40.58C40.9566 42 41.3178 41.8504 41.5841 41.5841C41.8504 41.3178 42 40.9566 42 40.58V23.42C42 23.0434 41.8504 22.6822 41.5841 22.4159C41.3178 22.1496 40.9566 22 40.58 22H23.42Z"
+                  fill="#BF390B" />
+              </g>
+              <defs>
+                <clipPath id="clip0_166_551">
+                  <rect width="64" height="64" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p class="icon-text">Enhanced Durability.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box icon1">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M48 40.222V10C48 4.486 43.514 0 38 0C32.486 0 28 4.486 28 10V13.148C24.468 6.528 19.832 1.064 19.518 0.698C18.946 0.03 18 -0.184 17.19 0.17C16.384 0.528 15.906 1.372 16.016 2.248C16.462 5.822 16.262 9.436 15.422 13.04C13.076 9.656 10.626 8 8 8C7.384 8 6.802 8.284 6.424 8.77C6.046 9.256 5.91 9.888 6.06 10.486C7.112 14.692 6.318 16.872 5.4 19.396C4.744 21.202 4 23.248 4 26C4 33.72 10.28 40 18 40C21.916 40 25.456 38.38 28 35.78V40.22C24.682 43.568 23.312 48.292 24.324 53.036C25.452 58.334 29.778 62.622 35.086 63.704C36.05 63.9 37.02 63.996 37.978 63.996C41.2 63.996 44.324 62.906 46.846 60.846C50.122 58.172 52 54.218 52 50C52 46.324 50.552 42.81 48 40.222ZM18 36C12.486 36 8 31.514 8 26C8 23.952 8.538 22.474 9.16 20.764C9.894 18.748 10.7 16.534 10.54 13.362C11.556 14.362 12.792 16.058 14.212 18.896C14.568 19.606 15.292 20.038 16.106 19.998C16.9 19.956 17.594 19.448 17.874 18.702C19.186 15.202 19.958 11.664 20.18 8.132C23.548 12.9 28 20.28 28 26C28 31.514 23.514 36 18 36ZM44.314 57.75C41.978 59.658 38.914 60.402 35.884 59.784C32.11 59.016 29.036 55.968 28.234 52.202C27.46 48.576 28.616 44.978 31.324 42.578C31.754 42.198 32 41.652 32 41.08V10C32 6.692 34.692 4 38 4C41.308 4 44 6.692 44 10V41.08C44 41.652 44.246 42.198 44.674 42.578C46.788 44.45 48 47.156 48 50C48 53.012 46.656 55.836 44.314 57.75Z"
+                fill="#BF390B" />
+              <path
+                d="M40 44.368V12H36V44.368C33.678 45.196 32 47.396 32 50C32 53.308 34.692 56 38 56C41.308 56 44 53.308 44 50C44 47.396 42.322 45.196 40 44.368ZM38 52C36.896 52 36 51.102 36 50C36 48.898 36.896 48 38 48C39.104 48 40 48.898 40 50C40 51.102 39.104 52 38 52Z"
+                fill="#BF390B" />
+            </svg>
+
+            <p class="icon-text">Sound, Fire, and Heat Insulation.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 d-flex align-item-stretch mb-4">
+          <div class="icon_box">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 40L36 8H56V28L24 60L4 40Z" stroke="#BF390B" stroke-width="4" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M46 22C48.2091 22 50 20.2091 50 18C50 15.7909 48.2091 14 46 14C43.7909 14 42 15.7909 42 18C42 20.2091 43.7909 22 46 22Z"
+                stroke="#BF390B" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M48 16L60 4" stroke="#BF390B" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M34 22L18 38" stroke="#BF390B" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M42 30L34 38" stroke="#BF390B" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <p class="icon-text">Reasonable Price.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Key Feature End -->
+
+  <!-- Products Start -->
+  <div id="products">
+    <div class="container">
+      <div class="bricks_icon">
+        <div class="icon">
+          <svg width="301" height="113" viewBox="0 0 301 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="31" width="55" height="23" rx="3" stroke="url(#paint0_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="0.1s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="32" y="60" width="55" height="23" rx="3" stroke="url(#paint1_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="0.2s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="32" y="1" width="55" height="23" rx="3" stroke="url(#paint2_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="0.2s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="62" y="31" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="0.7s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="93" y="60" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="1.7s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="154" y="60" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="2.9s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="123" y="89" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="1.8" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="93" y="1" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="3s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="154" y="1" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="3.2s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="62" y="89" width="55" height="23" rx="3" stroke="url(#paint3_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="2.5s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="184" y="89" width="55" height="23" rx="3" stroke="url(#paint4_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="5s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="123" y="31" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="3s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="184" y="31" width="55" height="23" rx="3" stroke="#BF390B" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="4s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="245" y="31" width="55" height="23" rx="3" stroke="url(#paint5_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="1s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="215" y="60" width="55" height="23" rx="3" stroke="url(#paint6_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="7s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <rect x="215" y="1" width="55" height="23" rx="3" stroke="url(#paint7_linear_166_602)" stroke-width="2">
+              <animate attributeName="stroke" values="#BF390B;#FFFFFF;#BF390B" dur="4s" repeatCount="indefinite"
+                begin="2s" keyTimes="0; 0.5; 1" keySplines=".42 0 0.58 1; .42 0 0.58 1" calcMode="spline" />
+            </rect>
+            <defs>
+              <linearGradient id="paint0_linear_166_602" x1="57" y1="43" x2="3.24952e-08" y2="43"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#FFDDD1" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="paint1_linear_166_602" x1="88" y1="72" x2="31" y2="72" gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#FFDDD1" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="paint2_linear_166_602" x1="88" y1="13" x2="31" y2="13" gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#FFDDD1" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="paint3_linear_166_602" x1="118" y1="101" x2="61" y2="101"
+                gradientUnits="userSpaceOnUse">
+              </linearGradient>
+              <linearGradient id="paint4_linear_166_602" x1="240" y1="101" x2="183" y2="101"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#BF390B" />
+              </linearGradient>
+              <linearGradient id="paint5_linear_166_602" x1="301" y1="43" x2="244" y2="43"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#BF390B" />
+              </linearGradient>
+              <linearGradient id="paint6_linear_166_602" x1="271" y1="72" x2="214" y2="72"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#BF390B" />
+              </linearGradient>
+              <linearGradient id="paint7_linear_166_602" x1="271" y1="13" x2="214" y2="13"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="1" stop-color="#BF390B" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="row product_wrapper">
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img1.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">1st Class Brick</h2>
+                      <p>
+                        Solid 1st Class bricks can be used in various construction. It’s solid and heavy...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img2.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">2nd Class Brick</h2>
+                      <p>
+                        2nd Class bricks are used in internal walls, partition walls, and other non-exposed...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img0.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Picked Brick</h2>
+                      <p>
+                        Now a days, no constructions are growing up without solid picket. It’s cheaper than...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/home/our-product-img3.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Concrete  Hollow Block </h2>
+                      <p>
+                        Concrete Block are durable building materials made from a mixture of cement, sand, and gravel
+                        or...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/home/our-product-img4.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Engineering Brick</h2>
+                      <p>
+                        Engineering bricks are high-strength, dense bricks specifically designed for...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/home/our-product-img5.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Ceramic Brick</h2>
+                      <p>
+                        Ceramic bricks are traditional building materials made from natural clay...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img6.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">3 Hole Brick</h2>
+                      <p>
+                        The holes also help with insulation, as they reduce heat transfer, and improve mortar...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img7.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Concrete Masonry Unit</h2>
+                      <p>
+                        Concrete Block are durable building materials made from a mixture of cement, sand, and gravel
+                        or...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 product_item d-flex align-item-stretch">
+          <div class="item">
+            <div class="product_box_wrapper">
+              <div class="row d-flex flex-column">
+                <div class="col-12">
+                  <div class="product_image_wrapper">
+                    <div class="product_image">
+                      <img src="./assets/img/products/our-product-img3.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="product_box_wrapper">
+                    <div class="product_details">
+                      <h2 class="product_heading">Small Bricks Chips</h2>
+                      <p>
+                        Bricks are made from various materials like clay, concrete, or shale, with clay...
+                      </p>
+                      <a href="./product-single.html" class="view_product_btn">
+                        <span>View Product</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination_outer">
+        <ul id="pagination">
+          <li>
+            <a class="prev disable" href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
+          </li>
+          <li><a href="#" class="link active">1</a></li>
+          <li><a href="#" class="link">2</a></li>
+          <li><a href="#" class="link">3</a></li>
+          <li><a href="#" class="link">4</a></li>
+          <li>
+            <a class="next" href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Products End -->
+
+  <!-- Footer Start  -->
+  <footer id="footer" style="padding-top: 50px">
+    <div class="container">
+      <div class="row footer_wrapper">
+        <div class="col-12 col-lg-4 footer_wrapper_item">
+          <a href="./index.html" class="footer_logo">
+            <img src="./assets/img/footer-logo.svg" alt="" />
+          </a>
+          <div class="footer_logo_text">
+            <p>
+              Bricks Land is a leading manufacturer of high-quality bricks, dedicated to providing durable, innovative,
+              and sustainable building solutions for the construction industry.
+            </p>
+          </div>
+          <div class="social_contact">
+            <h3>If your Interested, Contact Us?</h3>
+            <div class="social_icon mt-4">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 footer_wrapper_item">
+          <div class="footer_content">
+            <div class="footer_content_heading">
+              <h2>Company</h2>
+            </div>
+            <div class="footer_content_menu">
+              <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 footer_wrapper_item">
+          <div class="footer_content">
+            <div class="footer_content_heading">
+              <h2>Business Hours</h2>
+            </div>
+            <div class="footer_content_time">
+              <ul>
+                <li class="site_day_time"><a href="#">Monday - Saturday: 8:00am to 5:30pm</a></li>
+                <li class="mt-3">
+                  <a class="site_map" href="https://maps.app.goo.gl/eMrZZ8uu9jKTaaQG9"><i
+                      class="fa-solid fa-location-dot"></i>Get Site Map</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 footer_wrapper_item">
+          <div class="footer_content">
+            <div class="footer_content_heading">
+              <h2>Address</h2>
+            </div>
+            <div class="footer_content_address">
+              <ul>
+                <li><a href="#">2005 Old Spartanburg Road, South Carolina, USA</a></li>
+                <li class="mt-2">
+                  <a href="tel:(+864)292-6100">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class=" footer_contract_number">(+864) 292-6100</span>​</a>
+                </li>
+                <li class="mt-2">
+                  <a href="mailto:info@example.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class=" footer_contract_address">info@example.com</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Copy Right Start -->
+  <div id="copy_right">
+    <div class="container">
+      <div class="copy_right_heading">
+        <p>&copy; Bricks Land. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Copy Right End -->
+
+  <!-- jQuery (latest version) -->
+  <script src="./assets/js/vendor/jquery-3.7.0.min.js"></script>
+  <!-- Fortawesome js Link -->
+  <script src="./assets/js/vendor/fortawesome.all.min.js"></script>
+  <!-- JS Link Start -->
+  <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/preloader.js"></script>
+  <!-- JS Link End -->
+</body>
+
+</html>

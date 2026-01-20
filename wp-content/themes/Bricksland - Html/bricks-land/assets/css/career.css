@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+:root {
+    --primary-font: "Outfit";
+    --secondary-font: "Roboto";
+    --primary-color: #bf390b;
+    --secondary-color: #111111;
+    --gradient: linear-gradient(180deg,
+            rgba(170, 170, 170, 0.1) 0%,
+            #cfcfcf 100%);
+    --accent-1: #595959;
+    --accent-2: #a0a0a0;
+    --accent-3: #cdcdcd;
+    --accent-4: #ffddd1;
+    --accent-5: #ebebeb;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    background: var(--white);
+}
+
+/*====================
+  Reset Default CSS End
+  ====================*/
+
+/* our Target */
+
+.target {
+    margin-top: 70px;
+}
+
+.target .target_wrapper {
+    margin: 0 60px;
+}
+
+.target svg {
+    width: 70px;
+    height: 70px;
+}
+
+.target .icon {
+    margin-bottom: 30px;
+}
+
+.target .mission,
+.target .vission {
+    border: 1px solid var(--accent-2);
+    padding: 30px 10px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.target .mission h2,
+.target .vission h2 {
+    font-size: 28px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.target .mission p,
+.target .vission p {
+    font-size: 16px;
+    color: var(--accent-1);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .target .vission {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .target .target_wrapper {
+        margin: 0px 0px;
+    }
+
+    .target .icon {
+        margin-bottom: 10px;
+    }
+
+    .target .icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+/* our Target */
+
+/* How Brick Sizes Start */
+.how_brick_sizes {
+    margin-top: 70px;
+}
+
+.how_brick_sizes .row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.how_brick_sizes .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how_brick_sizes .content_box {
+    max-width: 45%;
+}
+
+.how_brick_sizes .content_title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.how_brick_sizes .content_text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--accent-1);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.how_brick_sizes .content_img {
+    max-width: 45%;
+    aspect-ratio: 16 / 12;
+    border-radius: 16px;
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.how_brick_sizes .content_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+.how_brick_sizes .content_img:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+
+    .how_brick_sizes .row {
+        gap: 40px;
+    }
+
+    .how_brick_sizes .col-12 {
+        display: block;
+        gap: 0px !important;
+        flex-direction: column;
+    }
+
+    .how_brick_sizes .content_img {
+        order: 1;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .how_brick_sizes .content_box {
+        order: 2;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brick_sizes_wrapper {
+        margin: 0px 0px;
+    }
+}
+
+/* How Brick Sizes End */
+
+/* Section Border Line Start */
+.border_line_section .border_line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-3);
+    margin-top: 50px;
+}
+
+/* Section Border Line End */
+
+/* Why Work Section Start */
+
+.why_work_section {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why_work_title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.why_work_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.why_work_item {
+    background: var(--white);
+    border: 1px solid var(--accent-5);
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s ease;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why_work_item:hover {
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.why_work_icon {
+    margin-bottom: 18px;
+}
+
+.why_work_icon svg {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.why_work_item_title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.why_work_text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--accent-1);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .why_work_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 576px) {
+    .why_work_section {
+        width: 100%;
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    .why_work_grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: stretch;
+    }
+
+    .why_work_title {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Why Work Section End */
+
+/* Current Openings Start */
+
+.current_openings {
+    margin-top: 70px;
+}
+
+.current_openings .section_title {
+    text-align: center;
+    font-size: 48px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.current_openings .section_subtitle {
+    max-width: 50%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto auto 60px auto;
+    color: var(--accent-1);
+}
+
+.current_openings .job_cards_section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: space-between;
+}
+
+.current_openings .job_card {
+    width: 49%;
+    background: var(--accent-4);
+    border-radius: 14px;
+    padding: 25px;
+    display: grid;
+    gap: 40px;
+}
+
+.current_openings .job_card_header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.current_openings .job_card_title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.current_openings .contact_btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 14.5px 46px;
+    transition: color 0.4s ease, background-color 0.4s ease;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.current_openings .contact_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.current_openings .contact_btn:hover {
+    color: var(--white);
+}
+
+.current_openings .contact_btn:hover::before {
+    left: 0;
+}
+
+.job_card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.job_card_label {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.job_card_value {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 992px) {
+    .job_card {
+        width: 100%;
+    }
+
+    .current_openings .job_card {
+        width: 100%;
+    }
+
+    .current_openings .job_card_title {
+    font-size: 22px;
+}
+
+    .job_card_grid {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .job_card_title {
+        font-size: 20px;
+    }
+}
+
+/* Current Openings End */
+
+/* newsletter Start  */
+
+#newsletter {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -120px;
+}
+
+#newsletter .newsletter_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter .newsletter_wrapper .content {
+    position: relative;
+    display: inline-block;
+    padding: 80px 180px;
+    text-align: center;
+    border-radius: 24px;
+    background: var(--accent-4);
+}
+
+#newsletter .content svg {
+    width: 150px;
+    height: 150px;
+}
+
+#newsletter .content .shape1 {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+#newsletter .content .shape2 {
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+#newsletter .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+#newsletter .content .contact_btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 14.5px 46px;
+    transition: color 0.4s ease, background-color 0.4s ease;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#newsletter .content .contact_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+#newsletter .content .contact_btn:hover {
+    color: var(--white);
+}
+
+#newsletter .content .contact_btn:hover::before {
+    left: 0;
+}
+
+@media screen and (max-width: 992px) {
+    #newsletter .newsletter_wrapper .content {
+        padding: 60px 100px;
+    }
+
+    #newsletter .content h1 {
+        font-size: 34px;
+    }
+
+    #newsletter .content svg {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #newsletter .content .contact_btn {
+        padding: 10px 30px;
+    }
+
+    #newsletter .newsletter_wrapper .content {
+        padding: 60px 20px !important;
+    }
+
+    #newsletter .content h1 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    #newsletter .content svg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* newsletter End  */
