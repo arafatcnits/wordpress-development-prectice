@@ -9,11 +9,9 @@
   --secondary-font: "Roboto";
   --primary-color: #bf390b;
   --secondary-color: #111111;
-  --gradient: linear-gradient(
-    180deg,
-    rgba(170, 170, 170, 0.1) 0%,
-    #cfcfcf 100%
-  );
+  --gradient: linear-gradient(180deg,
+      rgba(170, 170, 170, 0.1) 0%,
+      #cfcfcf 100%);
   --accent-1: #595959;
   --accent-2: #a0a0a0;
   --accent-3: #cdcdcd;
@@ -67,6 +65,7 @@ input {
 body {
   background: var(--white);
 }
+
 /*====================
   Reset Default CSS End
   ====================*/
@@ -315,30 +314,6 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 992px) {
-  #header {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 65%;
-    height: 100%;
-    display: block;
-    z-index: 100;
-    opacity: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    background-color: var(--white);
-    transition: all 0.4s ease;
-}
-  #header.active {
-    left: 0;
-    opacity: 1;
-    visibility: visible;
-    background: var(--white);
-  }
-}
-
 #header .menu-item {
   position: relative;
   display: inline-block;
@@ -433,13 +408,13 @@ body {
   color: var(--primary-color);
 }
 
-#header .menu-link > .dropdown_icon {
+#header .menu-link>.dropdown_icon {
   font-size: 18px;
   color: var(--secondary-color);
   transition: 0.4s;
 }
 
-#header .menu-link:hover > .dropdown_icon {
+#header .menu-link:hover>.dropdown_icon {
   rotate: 180deg;
   color: var(--primary-color);
 }
@@ -450,15 +425,16 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  #header .menu-dropdown:hover > .submenu {
+  #header .menu-dropdown:hover>.submenu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     z-index: 3;
     transition: all 0.4s ease-in-out;
+  }
 }
-}
+
 @media only screen and (max-width: 992px) {
   #header .wrapper {
     padding: 10px 0;
@@ -468,6 +444,7 @@ body {
   #header .discover_link {
     margin-bottom: 10px;
   }
+
   #header .discover_link {
     display: block;
     margin-left: 20px;
@@ -482,6 +459,7 @@ body {
     height: auto;
     padding: 16px 0;
   }
+
   #header .menu-item {
     display: block;
     margin: 0 auto;
@@ -520,19 +498,19 @@ body {
 
   #header .menu-link {
     transition: color 0.4s ease;
-}
+  }
 
   #header .menu-link:hover {
     color: var(--primary-color) !important;
   }
 
- 
+
 
   #header .submenu-link {
     display: block;
     color: var(--secondary-color);
     transition: color 0.4s ease;
-}
+  }
 }
 
 #header .submenu {
@@ -586,28 +564,102 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-  #header .submenu {
+
+  #header {
     position: relative;
-    top: 0px;
-    left: 40px;
-    max-width: 460px;
-    width: 100%;
-    max-height: 0;
-    padding: 0px;
-    border: none;
-    outline: none;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 100;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 1000;
+    transition: all 0.4s ease;
+    display: block !important;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px;
+  }
+
+  #header.active #navbar {
+    left: 0;
     opacity: 1;
-    overflow: hidden;
     visibility: visible;
-    transform: translateY(0px);
-    box-shadow: none;
-    background: transparent;
   }
-  #header .submenu .submenu-item {
-    border-radius: 6px;
+
+  #header .overlay.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
   }
-  #header .menu-item.active .dropdown_icon {
-    rotate: 180deg;
+
+  #header #burger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1000 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  #header #burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  .close-icon {
+    display: flex !important;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1100 !important;
+    visibility: visible !important;
+  }
+
+  .close-icon span {
+    background-color: #333 !important;
+  }
+
+  #header .contact_us_btn {
+    display: none;
+  }
+
+  #header .contact_us_btn_1 {
+    margin: 30px 0px 10px 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  #header .contact_us_btn_1:hover {
+    background: var(--secondary-color);
+  }
+
+  #header .contact_us_btn_1 a {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
   }
 }
 
@@ -625,6 +677,7 @@ body {
   visibility: hidden;
   background: transparent;
 }
+
 #header .burger-line {
   position: absolute;
   display: block;
@@ -637,13 +690,16 @@ body {
   border-radius: 1rem;
   background: var(--secondary-color);
 }
+
 #header .burger-line:nth-child(1) {
   top: 0px;
 }
+
 #header .burger-line:nth-child(2) {
   top: 8px;
   width: 70%;
 }
+
 #header .burger-line:nth-child(3) {
   top: 16px;
 }
@@ -678,14 +734,6 @@ body {
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 992px) {
-  #header .burger {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
 #header .overlay {
   position: fixed;
   top: 0;
@@ -697,42 +745,6 @@ body {
   visibility: hidden;
   transition: all 0.35s ease-in-out;
   background-color: rgba(0, 0, 0, 0.65);
-}
-@media only screen and (max-width: 992px) {
-  #header .overlay.active {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .close-icon {
-    display: block;
-  }
-
-  #header .contact_us_btn {
-    display: none;
-  }
-
-  #header .contact_us_btn_1 {
-    margin: 30px 0px 10px 20px;
-    display: inline-block;
-    border: 1px solid var(--secondary-color);
-    padding: 10px 30px;
-    border-radius: 8px;
-    background: var(--primary-color);
-    border: none;
-    transition: 0.4s;
-  }
-
-  #header .contact_us_btn_1:hover {
-    background: var(--secondary-color);
-  }
-
-  #header .contact_us_btn_1 a {
-    color: var(--white);
-    font-size: 18px;
-    font-weight: 500;
-  }
 }
 
 /* Navbar End */

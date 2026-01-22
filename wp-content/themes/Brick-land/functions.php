@@ -95,6 +95,7 @@ function bricksland_theme_scripts()
 	wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css', array(), '1.0', 'all');
 	wp_enqueue_style('gallery', get_template_directory_uri() . '/assets/css/gallery.css', array(), '1.0', 'all');
 	wp_enqueue_style('navbar-footer', get_template_directory_uri() . '/assets/css/navbar-footer.css', array(), '1.0', 'all');
+
 	wp_enqueue_style('preloader', get_template_directory_uri() . '/assets/css/preloader.css', array(), '1.0', 'all');
 	wp_enqueue_style('product-single', get_template_directory_uri() . '/assets/css/product-single.css', array(), '1.0', 'all');
 	wp_enqueue_style('products', get_template_directory_uri() . '/assets/css/products.css', array(), '1.0', 'all');
@@ -108,22 +109,22 @@ function bricksland_theme_scripts()
 	wp_enqueue_script('jquery-min', get_template_directory_uri() . '/assets/js/vendor/jquery-3.7.0.min.js', array('jquery'), '3.7.0', true);
 	wp_enqueue_script('owl-carousel-min', get_template_directory_uri() . '/assets/js/vendor/owl.carousel.min.js', array('jquery'), '2.3.4', true);
 	wp_enqueue_script('swiper-bundle-min', get_template_directory_uri() . '/assets/js/vendor/swiper-bundle.min.js', array('jquery'), '11.1.14', true);
-	wp_enqueue_script('about-counter', get_template_directory_uri() . '/js/about-counter.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('blog-section-vedio-model', get_template_directory_uri() . '/js/blog-section-vedio-model.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('brick-dimensions-guide', get_template_directory_uri() . '/js/brick-dimensions-guide.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('brick-test-result', get_template_directory_uri() . '/js/brick-test-result.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('career', get_template_directory_uri() . '/js/career.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('contract-form', get_template_directory_uri() . '/js/contract-form.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('frequently-questions', get_template_directory_uri() . '/js/frequently-questions.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('gallery-modal', get_template_directory_uri() . '/js/gallery-modal.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('hero-slider', get_template_directory_uri() . '/js/hero-slider.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('our-blog-slider', get_template_directory_uri() . '/js/our-blog-slider.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('our-client-slider', get_template_directory_uri() . '/js/our-client-slider.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('our-customer-slider', get_template_directory_uri() . '/js/our-customer-slider.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('our-product-slider', get_template_directory_uri() . '/js/our-product-slider.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('preloader', get_template_directory_uri() . '/js/preloader.js', array('jquery'), 1.0, true);
-	wp_enqueue_script('product-single-page-reviews', get_template_directory_uri() . '/js/product-single-page-reviews.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('about-counter', get_template_directory_uri() . '/assets/js/about-counter.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('blog-section-vedio-model', get_template_directory_uri() . '/assets/js/blog-section-vedio-model.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('brick-dimensions-guide', get_template_directory_uri() . '/assets/js/brick-dimensions-guide.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('brick-test-result', get_template_directory_uri() . '/assets/js/brick-test-result.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('career', get_template_directory_uri() . '/assets/js/career.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('contract-form', get_template_directory_uri() . '/assets/js/contract-form.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('frequently-questions', get_template_directory_uri() . '/assets/js/frequently-questions.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('gallery-modal', get_template_directory_uri() . '/assets/js/gallery-modal.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('hero-slider', get_template_directory_uri() . '/assets/js/hero-slider.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('our-blog-slider', get_template_directory_uri() . '/assets/js/our-blog-slider.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('our-client-slider', get_template_directory_uri() . '/assets/js/our-client-slider.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('our-customer-slider', get_template_directory_uri() . '/assets/js/our-customer-slider.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('our-product-slider', get_template_directory_uri() . '/assets/js/our-product-slider.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('preloader', get_template_directory_uri() . '/assets/js/preloader.js', array('jquery'), 1.0, true);
+	wp_enqueue_script('product-single-page-reviews', get_template_directory_uri() . '/assets/js/product-single-page-reviews.js', array('jquery'), '1.0', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

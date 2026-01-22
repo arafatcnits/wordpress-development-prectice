@@ -1,9 +1,9 @@
 // Navbar START.........................
 
-const navbarMenu = document.getElementById("navbar");
+const navbarMenu = document.getElementById("header");
 const burgerMenu = document.getElementById("burger");
 const overlayMenu = document.querySelector(".overlay");
-const closeIcon = document.getElementById("close-icon"); // New close icon reference
+const closeIcon = document.getElementById("close-icon"); 
 
 // Show and Hide Navbar Function
 const toggleMenu = () => {
@@ -19,7 +19,7 @@ const closeNavbar = () => {
 
 // Collapse Mobile Submenu Function
 const toggleSubMenu = (e) => {
-  const menuDropdown = e.target.closest(".menu-dropdown"); // Updated to target `.menu-dropdown`
+  const menuDropdown = e.target.closest(".menu-dropdown");
   const isInsideSubMenu = e.target.closest(".submenu");
   const submenuLink = e.target.closest(".submenu-link");
 

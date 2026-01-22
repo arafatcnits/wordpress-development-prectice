@@ -9,11 +9,9 @@
   --secondary-font: "Roboto";
   --primary-color: #bf390b;
   --secondary-color: #111111;
-  --gradient: linear-gradient(
-    180deg,
-    rgba(170, 170, 170, 0.1) 0%,
-    #cfcfcf 100%
-  );
+  --gradient: linear-gradient(180deg,
+      rgba(170, 170, 170, 0.1) 0%,
+      #cfcfcf 100%);
   --accent-1: #595959;
   --accent-2: #a0a0a0;
   --accent-3: #cdcdcd;
@@ -67,6 +65,7 @@ input {
 body {
   background: var(--white);
 }
+
 /*====================
   Reset Default CSS End
   ====================*/
@@ -330,7 +329,8 @@ body {
     visibility: hidden;
     background-color: var(--white);
     transition: all 0.4s ease;
-}
+  }
+
   #header .navbar.active {
     left: 0rem;
     opacity: 1;
@@ -433,13 +433,13 @@ body {
   color: var(--primary-color);
 }
 
-#header .menu-link > .dropdown_icon {
+#header .menu-link>.dropdown_icon {
   font-size: 18px;
   color: var(--secondary-color);
   transition: 0.4s;
 }
 
-#header .menu-link:hover > .dropdown_icon {
+#header .menu-link:hover>.dropdown_icon {
   rotate: 180deg;
   color: var(--primary-color);
 }
@@ -450,15 +450,16 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  #header .menu-dropdown:hover > .submenu {
+  #header .menu-dropdown:hover>.submenu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     z-index: 3;
     transition: all 0.4s ease-in-out;
+  }
 }
-}
+
 @media only screen and (max-width: 992px) {
   #header .wrapper {
     padding: 10px 0;
@@ -468,6 +469,7 @@ body {
   #header .discover_link {
     margin-bottom: 10px;
   }
+
   #header .discover_link {
     display: block;
     margin-left: 20px;
@@ -482,6 +484,7 @@ body {
     height: auto;
     padding: 16px 0;
   }
+
   #header .menu-item {
     display: block;
     margin: 0 auto;
@@ -520,19 +523,19 @@ body {
 
   #header .menu-link {
     transition: color 0.4s ease;
-}
+  }
 
   #header .menu-link:hover {
     color: var(--primary-color) !important;
   }
 
- 
+
 
   #header .submenu-link {
     display: block;
     color: var(--secondary-color);
     transition: color 0.4s ease;
-}
+  }
 }
 
 #header .submenu {
@@ -603,9 +606,11 @@ body {
     box-shadow: none;
     background: transparent;
   }
+
   #header .submenu .submenu-item {
     border-radius: 6px;
   }
+
   #header .menu-item.active .dropdown_icon {
     rotate: 180deg;
   }
@@ -625,6 +630,7 @@ body {
   visibility: hidden;
   background: transparent;
 }
+
 #header .burger-line {
   position: absolute;
   display: block;
@@ -637,13 +643,16 @@ body {
   border-radius: 1rem;
   background: var(--secondary-color);
 }
+
 #header .burger-line:nth-child(1) {
   top: 0px;
 }
+
 #header .burger-line:nth-child(2) {
   top: 8px;
   width: 70%;
 }
+
 #header .burger-line:nth-child(3) {
   top: 16px;
 }
@@ -698,6 +707,7 @@ body {
   transition: all 0.35s ease-in-out;
   background-color: rgba(0, 0, 0, 0.65);
 }
+
 @media only screen and (max-width: 992px) {
   #header .overlay.active {
     display: block;
