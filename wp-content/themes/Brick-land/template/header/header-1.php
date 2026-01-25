@@ -42,21 +42,7 @@
                  </div>
                  <span>|</span>
                  <div class="social">
-                     <?php if (!empty($fb_url)) : ?>
-                         <a href="<?php echo $fb_url; ?>"><i class="fa-brands fa-facebook-f"></i></a>
-                     <?php endif; ?>
-
-                     <?php if (!empty($ins_url)) : ?>
-                         <a href="<?php echo $ins_url; ?>"><i class="fa-brands fa-instagram"></i></a>
-                     <?php endif; ?>
-
-                     <?php if (!empty($wp_url)) : ?>
-                         <a href="<?php echo $wp_url; ?>"><i class="fa-brands fa-whatsapp"></i></a>
-                     <?php endif; ?>
-
-                     <?php if (!empty($yu_url)) : ?>
-                         <a href="<?php echo $yu_url; ?>"><i class="fa-brands fa-youtube"></i></a>
-                     <?php endif; ?>
+                     <?php bricksland_header_social(); ?>
                  </div>
              </div>
          </div>
@@ -137,3 +123,13 @@
      </div>
  </header>
  <!-- Navbar End -->
+
+
+
+
+ <h1> <?php echo esc_html__('This is Siam', 'bricksland'); ?> </h1>
+ <input type="text" placeholder="<?php echo esc_attr__('Your Name', 'bricksland'); ?>">
+
+ <h2><?php echo esc_html($address); ?></h2>
+
+ <a href=" <?php echo esc_url($url); ?>">Button Text</a>

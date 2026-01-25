@@ -54,7 +54,7 @@ new \Kirki\Field\Text(
     [
         'settings' => 'fb_url',
         'label'    => esc_html__('Facebook URL', 'kirki'),
-        'section'  => 'header_section_id',
+        'section'  => 'header_social_section',
         'default'  => esc_html__('#', 'kirki'),
         'priority' => 10,
     ]
@@ -64,7 +64,7 @@ new \Kirki\Field\Text(
     [
         'settings' => 'ins_url',
         'label'    => esc_html__('Instagram URL', 'kirki'),
-        'section'  => 'header_section_id',
+        'section'  => 'header_social_section',
         'default'  => esc_html__('#', 'kirki'),
         'priority' => 10,
     ]
@@ -74,7 +74,7 @@ new \Kirki\Field\Text(
     [
         'settings' => 'wp_url',
         'label'    => esc_html__('WhatsApp URL', 'kirki'),
-        'section'  => 'header_section_id',
+        'section'  => 'header_social_section',
         'default'  => esc_html__('#', 'kirki'),
         'priority' => 10,
     ]
@@ -84,7 +84,7 @@ new \Kirki\Field\Text(
     [
         'settings' => 'yu_url',
         'label'    => esc_html__('YouTube URL', 'kirki'),
-        'section'  => 'header_section_id',
+        'section'  => 'header_social_section',
         'default'  => esc_html__('#', 'kirki'),
         'priority' => 10,
     ]

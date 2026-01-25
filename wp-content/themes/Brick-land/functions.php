@@ -133,4 +133,5 @@ function bricksland_theme_scripts()
 add_action('wp_enqueue_scripts', 'bricksland_theme_scripts');
 
 
+include_once('inc/template-funtion.php');
 include_once('inc/bricksland-kirki.php');
